@@ -2,7 +2,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |text|string|null: false|
-|imag|string|null: false|
+|imag|string|null: true|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
@@ -16,7 +16,7 @@
 ### Association
 - has_many :user, through:  :groups_users
 - has_many :messages
-- has_many :group
+- has_many :groups_users
 
 ## userテーブル
 |Column|Type|Options|
@@ -27,7 +27,7 @@
 ### Association
 - has_many :group, through:  :groups_users
 - has_many :messages
-- has_many :user
+- has_many :groups_users
 
 ## groups_usersテーブル（中間テーブル）
 |Column|Type|Options|
