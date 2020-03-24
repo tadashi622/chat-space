@@ -15,8 +15,8 @@
 |user_id|integer|null: false,foreign_key: true|
 |group_id|integer|null: false,foreign_key: true|
 ### Association
-has_many :user, through:  :groups_users
-has_many :messages
+- has_many :user, through:  :groups_users
+- has_many :messages
 
 ## userテーブル
 |Column|Type|Options|
@@ -25,8 +25,8 @@ has_many :messages
 |email|string|null: false|
 |password|string|null: false|
 ### Association
-has_many :group, through:  :groups_users
-has_many :messages
+- has_many :group, through:  :groups_users
+- has_many :messages
 
 ## groups_usersテーブル（中間テーブル）
 |Column|Type|Options|
