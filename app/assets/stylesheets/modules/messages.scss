@@ -15,7 +15,7 @@
       height: 100px;
       width: 300px;
       position: relative;
-      .side-header__name{
+      &__name{
         background-color: #d8d8d8;
         height: 20px;
         width: 260px;
@@ -28,7 +28,7 @@
         display: flex;
         justify-content: space-between;
       }
-      .side-header__name-group{
+      &__name-group{
         display: flex;
       }
         &__name-user {
@@ -100,25 +100,25 @@
       padding: 46px 40px;
       overflow: scroll;
     }
-      .chat-messages__message{
+      &__message{
         background-color: red;
         padding-bottom: 40px;
       }
-        .chat-messages__message-upper{
+        &__message-upper{
           display: flex;
           margin-bottom: 10px;
-          .chat-messages__message__upper__title{
+          &__title{
             color: #434a54;
             font-size: 16px;
             font-weight: bold;
           }
-          .chat-messages__message__upper__time{
+          &__time{
             color: #999999;
             font-size: 12px;
             margin-left: 10px;
           }
         }
-        .chat-messages__message-text{
+        &__message-text{
           color: #434a54;
           font-size: 14px;
           margin-bottom: 10px;
@@ -130,9 +130,6 @@
     }
       .chat-form-new{
         display: flex;
-        // input{
-        //   display: none;
-        // }
         &__input{
           background-color: white;
           position: relative;
