@@ -1,0 +1,26 @@
+.chat
+  .chat-header
+    %p.chat-header__left bbb
+    %p.chat-header__bottom mmm
+    %p.chat-header__right 
+      =link_to"#"do
+        Edit
+  .chat-messages
+    .chat-messages__messa 
+      .chat-messages__message-upper
+        %p.chat-messages__message__upper__title bbb
+        %p.chat-messages__message__upper__time vvv
+      %p.chat-messages__message__text ggg
+  .chat-form
+    .chat-form-new 
+      .chat-form-new__input
+        %input.chat-form-new__input__message 
+        %p.chat-form-new__input__image
+          =link_to"#"do
+            %label{class: "chat-form-new__input__image"}
+              =icon('far','image')
+              %input{type: "file"}
+      .chat-form-new__submit 
+        =link_to"#"do
+          Send
+        
