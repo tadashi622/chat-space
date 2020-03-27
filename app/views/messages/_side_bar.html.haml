@@ -1,14 +1,15 @@
 .side
   .side-header
     .side-header__name
-      %p.side-header__name-user Yoshimura
+      %p.side-header__name-user 
+        = current_user.name
       .side-header__name-group
         %p.side-header__name-menu 
           =link_to "#" do
             =icon('fas', 'edit')
         %p.side-header__name-cog
-          =link_to "#" do
-            =icon('fas','cog')
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog')
   .side-group
     %p.side-group__name f
     %p.side-group__messages n
