@@ -33,14 +33,15 @@
       }
         &__name-user {
           color: black;
+          font-weight: bold;
           padding-left: 0px;
         }
         &__name-menu{
           margin-right: 5px;
         }
-      &__name-cog{
-        padding-right: 0px;
-      }
+        &__name-cog{
+          padding-right: 0px;
+        }
       }
    }
 }
@@ -50,12 +51,16 @@
   height: calc(100vh - 100px);
   padding: 20px 20px 0;
   overflow: scroll;
-  &__name{
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  &__messages{
-    font-size: 11px;
+  .group-list{
+    &__name{
+      color:#ffffff;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    &__messages{
+      color: #ffffff;
+      font-size: 11px;
+    }
   }
 }
 

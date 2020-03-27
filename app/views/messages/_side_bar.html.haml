@@ -5,13 +5,17 @@
         = current_user.name
       .side-header__name-group
         %p.side-header__name-menu 
-          =link_to "#" do
+          =link_to new_group_path do
             =icon('fas', 'edit')
         %p.side-header__name-cog
-          = link_to edit_user_path(current_user) do
+          = link_to edit_user_path(current_user.id) do
             = icon('fas', 'cog')
   .side-group
-    %p.side-group__name f
-    %p.side-group__messages n
-
-
+    - current_user.groups.each do |group|
+      .group-list
+        = link_to '#' do
+          .group-list__name
+            = group.name
+          .group-list__messages 
+            メッセージはまだありません
+      
