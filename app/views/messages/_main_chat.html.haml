@@ -1,18 +1,22 @@
 
 .chat
   .chat-header
-    %p.chat-header__left bbb
-    %p.chat-header__bottom mmm
+    %p.chat-header__left 
+      = @group.name
+    %p.chat-header__bottom
+      Member : 
+      - @group.users.each do |user|
+        = user.name
     %p.chat-header__right 
-      = link_to"#"do
+      = link_to edit_group_path(@group)  do
         Edit
   .chat-messages
     = render @messages
     .chat-messages__messa
       .chat-messages__message-upper
-        %p.chat-messages__message__upper__title bbb
-        %p.chat-messages__message__upper__time vvv
-      %p.chat-messages__message__text ggg
+        %p.chat-messages__message__upper__title 
+        %p.chat-messages__message__upper__time 
+      %p.chat-messages__message__text 
 
   .chat-form
     .chat-form-new 
