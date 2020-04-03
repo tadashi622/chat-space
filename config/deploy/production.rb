@@ -1,3 +1,5 @@
+server '3.20.161.142', user: 'ec2-user', roles: %w{app db web}
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
@@ -60,4 +62,3 @@
 #     # password: "please use keys"
 #   }
 
-server '3.20.161.142', user: 'ec2-user', roles: %w{app db web}
