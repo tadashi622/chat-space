@@ -9,7 +9,7 @@
             =icon('fas', 'edit')
         %p.side-header__name-cog
           = link_to edit_user_path(current_user.id) do
-            = icon('fas', 'cog')
+            = icon('fas', 'cog' )
   .side-group
     - current_user.groups.each do |group|
       .group-list

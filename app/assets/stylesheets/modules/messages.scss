@@ -42,6 +42,9 @@
         &__name-cog{
           padding-right: 0px;
         }
+        a{
+          color: white;
+        }
     }
 }
 
@@ -99,6 +102,9 @@
         border: solid 1px #38aef0;
         position: absolute;
         right: 40px;
+      }
+      a{
+        color: #38aef0;
       }
     }
     .chat-messages{
