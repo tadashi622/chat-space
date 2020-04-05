@@ -27,5 +27,5 @@
           .chat-form-new__input__image
             = f.label :image, class: "chat-form-new__input__image" do
               = icon('far','image', class: 'icon')
-              = f.file_field :image, class: 'hidden'
+              = f.file_field :image, class: 'form__message'
           = f.submit 'Send', class: 'form__btn'
