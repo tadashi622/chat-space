@@ -6,12 +6,13 @@
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
-
-    &__inner--left, &__inner--right {
+    display: flex;
+    justify-content: space-between;
+    &__inner--left,&__inner--right {
       float: left;
       width: 50%;
     }
-    &:after {
+    &__after {
       clear: both;
       content: "";
       display: block;
@@ -47,7 +48,9 @@
       font-size: 14px;
     }
   }
-
+  .account-page__inner--right.user-form{
+    width: 50%;
+  }
   .field {
     margin-bottom: 10px;
 
