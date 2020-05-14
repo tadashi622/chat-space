@@ -1,3 +1,5 @@
+![chat](https://user-images.githubusercontent.com/62418207/81946888-e146bb00-963a-11ea-8eef-a7bcc5c8fe80.gif)
+
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|

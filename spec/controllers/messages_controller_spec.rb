@@ -71,7 +71,6 @@ describe '#create' do
 end
 
 context 'not log in' do
-
   it 'redirects to new_user_session_path' do
     post :create, params: params
     expect(response).to redirect_to(new_user_session_path)
